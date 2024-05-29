@@ -1,0 +1,20 @@
+@startuml
+title System Context Diagram
+
+actor Student
+actor Instructor
+actor Administrator
+
+package "Online Learning Management System (LMS)" {
+    [LMS] as System
+}
+
+Student --> System : Enroll in courses, access materials
+Instructor --> System : Create and manage courses
+Administrator --> System : Manage user accounts, monitor system
+
+System --> Student : Provide course content, track progress
+System --> Instructor : Provide course management tools
+System --> Administrator : Provide system management tools
+
+@enduml
