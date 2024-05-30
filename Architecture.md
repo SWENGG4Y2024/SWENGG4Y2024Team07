@@ -2,13 +2,13 @@
  
 ## System Context Diagram
  
-![System Context Diagram](Architecture/context.png)
+![System Context Diagram](Attachements/Images/context.png)
  
 The System Context Diagram provides an overview of the LMS and its interactions with external users and systems. The main actors interacting with the LMS are students, instructors, and administrators.
  
 ## Container Diagram
  
-![Container Diagram](Architecture/container.png)
+![Container Diagram](Attachements/Images/container.png)
  
 The Container Diagram shows the high-level containers within the LMS. The main containers are:
  
