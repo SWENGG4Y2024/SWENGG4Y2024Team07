@@ -1,20 +1,40 @@
 @startuml
 title System Context Diagram
 
-actor Student
-actor Instructor
-actor Administrator
+skinparam backgroundColor #E6E6FA
+skinparam actor {
+    BackgroundColor black
+    BorderColor black
+    FontColor black
+}
+skinparam package {
+    BackgroundColor #ABABD4
+    BorderColor #696969
+    FontColor white
+}
+skinparam rectangle {
+    BackgroundColor #ABABD4
+    BorderColor #696969
+    FontColor white
+}
+skinparam Arrow {
+    Color #A9A9A9
+    Thickness 2
+}
+
+actor Student as s
+actor Instructor as i
+actor Administrator as a
 
 package "Online Learning Management System (LMS)" {
     [LMS] as System
 }
 
-Student --> System : Enroll in courses, access materials
-Instructor --> System : Create and manage courses
-Administrator --> System : Manage user accounts, monitor system
+s --> System : Enroll in courses,\naccess materials
+i --> System : Create and manage courses
+a --> System : Manage user accounts,\nmonitor system
 
-System --> Student : Provide course content, track progress
-System --> Instructor : Provide course management tools
-System --> Administrator : Provide system management tools
-
+System --> s : Provide course content,\ntrack progress
+System --> i : Provide course management tools
+System --> a : Provide system management tools
 @enduml
