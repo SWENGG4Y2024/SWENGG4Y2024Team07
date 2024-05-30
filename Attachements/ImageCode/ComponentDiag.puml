@@ -1,0 +1,54 @@
+@startuml
+title High-Level Component Diagram
+
+skinparam backgroundColor #F5F5F5
+skinparam package {
+    BackgroundColor #ABABD4
+    BorderColor #696969
+    FontColor white
+}
+skinparam component {
+    BackgroundColor #ABABD4
+    BorderColor #696969
+    FontColor white
+}
+skinparam Arrow {
+    Color #747574
+    Thickness 2
+}
+
+actor User as u
+
+package "Web Application" {
+    [Frontend] as Frontend
+}
+
+package "Backend Services" {
+    [API Gateway] as APIGateway
+    [Course Management Service] as CourseManagementService
+    [User Management Service] as UserManagementService
+    [Quiz and Assignment Service] as QuizAssignmentService
+    [Payment Service] as PaymentService
+    [Authentication Service] as AuthenticationService
+    [Content Delivery Service] as ContentDeliveryService
+    [Notification Service] as NotificationService
+}
+
+Frontend --> APIGateway
+APIGateway --> CourseManagementService
+APIGateway --> UserManagementService
+APIGateway --> QuizAssignmentService
+APIGateway --> PaymentService
+APIGateway --> AuthenticationService
+APIGateway --> ContentDeliveryService
+APIGateway --> NotificationService
+
+CourseManagementService --> Database
+UserManagementService --> Database
+QuizAssignmentService --> Database
+PaymentService --> PaymentSystem
+AuthenticationService --> AuthProvider
+ContentDeliveryService --> CDN
+NotificationService --> MessageQueue
+NotificationService --> Cache
+@enduml
