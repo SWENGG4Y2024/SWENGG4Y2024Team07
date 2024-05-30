@@ -1,0 +1,54 @@
+@startuml
+skinparam linetype ortho
+ 
+entity "User" as U {
+    * id : UUID
+    * name : String
+    * email : String
+    * role : String
+}
+ 
+entity "Course" as C {
+    * id : UUID
+    * title : String
+    * description : Text
+    * instructor_id : UUID
+}
+ 
+entity "Enrollment" as E {
+    * id : UUID
+    * student_id : UUID
+    * course_id : UUID
+    * enrollment_date : Date
+}
+ 
+entity "Quiz" as Q {
+    * id : UUID
+    * course_id : UUID
+    * title : String
+    * description : Text
+}
+ 
+entity "Assignment" as A {
+    * id : UUID
+    * course_id : UUID
+    * title : String
+    * description : Text
+    * due_date : Date
+}
+ 
+entity "Grade" as G {
+    * id : UUID
+    * student_id : UUID
+    * course_id : UUID
+    * grade : String
+}
+ 
+U ||--|| C : "instructor"
+U ||--|| E : "student"
+C ||--|{ E
+C ||--|{ Q
+C ||--|{ A
+U ||--|{ G : "student"
+C ||--|{ G
+@enduml
