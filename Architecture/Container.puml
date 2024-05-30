@@ -1,0 +1,61 @@
+@startuml
+title Container Diagram
+
+skinparam backgroundColor #F5F5F5
+skinparam actor {
+    BackgroundColor black
+    BorderColor black
+    FontColor black
+}
+skinparam package {
+    BackgroundColor #ABABD4
+    BorderColor #696969
+    FontColor white
+}
+skinparam rectangle {
+    BackgroundColor #ABABD4
+    BorderColor #696969
+    FontColor white
+}
+skinparam Arrow {
+    Color #747574
+    Thickness 2
+}
+
+actor Student as s
+actor Instructor as i
+actor Administrator as a
+
+package "Web Browser" {
+    [Student Browser] as StudentBrowser
+    [Instructor Browser] as InstructorBrowser
+    [Administrator Browser] as AdminBrowser
+}
+
+package "Online Learning Management System (LMS)" {
+    [Web Application] as WebApp
+    [API Gateway] as APIGateway
+    [Course Management Service] as CourseService
+    [User Management Service] as UserService
+    [Quiz and Assignment Service] as QuizService
+    [Database] as Database
+}
+
+s --> StudentBrowser : Use
+i --> InstructorBrowser : Use
+a --> AdminBrowser : Use
+
+StudentBrowser --> WebApp : Use
+InstructorBrowser --> WebApp : Use
+AdminBrowser --> WebApp : Use
+
+WebApp --> APIGateway : API Requests
+
+APIGateway --> CourseService : Course Management API
+APIGateway --> UserService : User Management API
+APIGateway --> QuizService : Quiz and Assignment API
+
+CourseService --> Database : Read/Write
+UserService --> Database : Read/Write
+QuizService --> Database : Read/Write
+@enduml
