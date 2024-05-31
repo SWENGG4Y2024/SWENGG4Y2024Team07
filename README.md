@@ -1,6 +1,5 @@
 # Online Learning Management System
 
-## Description
 The Online Learning Management System is a web-based platform designed to facilitate the management of online courses. The system will allow students to enroll in courses, access course materials, participate in quizzes and assignments, and track their progress. Instructors will be able to create and manage courses, upload course materials, grade assignments and quizzes, and monitor student progress. The LMS will also include features for administrators to manage user accounts and permissions, monitor system usage and performance, and resolve technical issues.
 
 ## Developers
