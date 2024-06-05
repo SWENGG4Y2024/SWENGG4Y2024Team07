@@ -1,11 +1,6 @@
 # Software Testing Document for Online Learning Management System (LMS)
  
 ## 1. Introduction
- 
-### 1.1 Purpose
-The purpose of this document is to outline the testing strategy and approach for the Online Learning Management System (LMS). It defines the scope, objectives, resources, and schedule for the testing activities to ensure the LMS meets its requirements and specifications.
- 
-### 1.2 Scope
 This testing document applies to all features and functionalities of the LMS, including course management, user authentication, quiz and assignment handling, and administrative functions. It covers unit testing, integration testing, system testing, and acceptance testing.
  
 ## 2. Test Plan
