@@ -76,6 +76,7 @@ Comprehensive user documentation will be provided, including:
 
 ### 4.2 References
 - [IEEE Standard 830-1998 for Software Requirements Specifications](https://ieeexplore.ieee.org/document/720574)
+- SWEBOK
 - General Data Protection Regulation (GDPR) Information: [GDPR EU Regulation](https://gdpr.eu/)
 - Web Content Accessibility Guidelines (WCAG) 2.1: [W3C WCAG 2.1](https://www.w3.org/TR/WCAG21/)
 - Single Sign-On (SSO) Standards: [SSO Overview](https://www.techopedia.com/definition/4324/single-sign-on-sso)
