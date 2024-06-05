@@ -32,14 +32,7 @@ The LMS will be a web-based application, accessible through modern web browsers 
 - The system should be scalable to support a large number of concurrent users.
 - Integration with existing authentication systems (e.g., SSO) is required.
 
-### 2.6 User Documentation
-Comprehensive user documentation will be provided, including:
-- User manuals
-- Quick start guides
-- Video tutorials
-- FAQ sections
-
-### 2.7 Assumptions and Dependencies
+### 2.6 Assumptions and Dependencies
 - Reliable internet connectivity for accessing the LMS.
 - Users have basic computer literacy.
 - Availability of necessary resources (servers, development tools, etc.).
