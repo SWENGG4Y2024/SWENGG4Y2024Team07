@@ -1,90 +1,30 @@
 # Software Requirements Specification (SRS) for Online Learning Management System (LMS)
 
 ## 1. Introduction
-
-### 1.1 Purpose
-The purpose of this Software Requirements Specification (SRS) document is to provide a detailed description of the Online Learning Management System (LMS). It outlines the system's functional and non-functional requirements, guiding the development team in creating a web-based platform that meets the needs of students, instructors, and administrators.
-
-### 1.2 Scope
 The LMS is designed to manage online courses, enabling students to enroll in courses, access materials, participate in quizzes and assignments, and track their progress. Instructors will be able to create and manage courses, upload materials, grade assignments, and monitor student progress. Administrators will manage user accounts, monitor system usage, and resolve technical issues.
 
-### 1.3 Definitions, Acronyms, and Abbreviations
-- **LMS**: Learning Management System
-- **SRS**: Software Requirements Specification
-- **NFR**: Non-Functional Requirements
-- **GUI**: Graphical User Interface
-- **ROI**: Return on Investment
-- **GDPR**: General Data Protection Regulation
-- **SSO**: Single Sign-On
-- **WCAG**: Web Content Accessibility Guidelines
-
-### 1.4 References
-- [IEEE Standard 830-1998 for Software Requirements Specifications](https://ieeexplore.ieee.org/document/720574)
-- [SWEBOK Guide](https://www.computer.org/education/bodies-of-knowledge/software-engineering-v3)
-- Project Charter Document
-- General Data Protection Regulation (GDPR) Information: [GDPR EU Regulation](https://gdpr.eu/)
-- Web Content Accessibility Guidelines (WCAG) 2.1: [W3C WCAG 2.1](https://www.w3.org/TR/WCAG21/)
-- Single Sign-On (SSO) Standards: [SSO Overview](https://www.techopedia.com/definition/4324/single-sign-on-sso)
-
-### 1.5 Overview
-This document includes the overall description of the LMS, specific functional and non-functional requirements, system features, and supporting information necessary for the development and implementation of the LMS.
-
-## 2. Overall Description
+## 2. Product Description
 
 ### 2.1 Product Perspective
-The LMS is a standalone system that will be accessible via a web browser. It will integrate with existing authentication systems for user management and provide a seamless experience for all stakeholders.
+The LMS is a standalone system that will be accessible via a web browser on both computers and mobile devices. It will integrate with existing authentication systems for user management and provide a seamless experience for all stakeholders.
 
-### 2.2 Product Functions
-- **Students**:
-  - Enroll in courses
-  - Access materials
-  - Participate in quizzes/assignments
-  - Track progress
-  - Provide feedback
-- **Instructors**:
-  - Create/manage courses
-  - Upload materials
-  - Design/grade quizzes and assignments
-  - Monitor student progress
-  - Interact with students
-- **Administrators**:
-  - Manage user accounts and permissions
-  - Monitor system usage
-  - Ensure data security
-  - Resolve issues
-  - Generate reports
+### 2.2 Product Functions and Characteristics
 
-### 2.3 User Classes and Characteristics
-- **Students**:
-  - Diverse backgrounds
-  - Varying levels of technical proficiency
-  - Primarily focused on learning and progress tracking
-- **Instructors**:
-  - Technically proficient
-  - Focused on course management, content creation, and student assessment
-- **Administrators**:
-  - Technically skilled
-  - Responsible for system management, user administration, and technical support
+| User Type       | Functions                                                                                              | Characteristics                                                                                     |
+|-----------------|--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| **Students**    | - Enroll in courses <br> - Access materials <br> - Participate in quizzes/assignments <br> - Track progress <br> - Provide feedback | - Diverse backgrounds <br> - Varying levels of technical proficiency <br> - Primarily focused on learning and progress tracking |
+| **Instructors** | - Create/manage courses <br> - Upload materials <br> - Design/grade quizzes and assignments <br> - Monitor student progress <br> - Interact with students | - Technically proficient <br> - Focused on course management, content creation, and student assessment |
+| **Administrators** | - Manage user accounts and permissions <br> - Monitor system usage <br> - Ensure data security <br> - Resolve issues <br> - Generate reports | - Technically skilled <br> - Responsible for system management, user administration, and technical support |
 
-### 2.4 Operating Environment
+
+
+### 2.3 Operating Environment
 The LMS will be a web-based application, accessible through modern web browsers (e.g., Chrome, Firefox, Safari, Edge) on various devices (desktops, laptops, tablets, smartphones).
 
-### 2.5 Design and Implementation Constraints
+### 2.4 Design and Implementation Constraints
 - The system must comply with relevant data protection regulations (e.g., GDPR).
 - The system should be scalable to support a large number of concurrent users.
 - Integration with existing authentication systems (e.g., SSO) is required.
-
-### 2.6 User Documentation
-Comprehensive user documentation will be provided, including:
-- User manuals
-- Quick start guides
-- Video tutorials
-- FAQ sections
-
-### 2.7 Assumptions and Dependencies
-- Reliable internet connectivity for accessing the LMS.
-- Users have basic computer literacy.
-- Availability of necessary resources (servers, development tools, etc.).
 
 ## 3. Specific Requirements
 
@@ -172,5 +112,3 @@ Comprehensive user documentation will be provided, including:
 - General Data Protection Regulation (GDPR) Information: [GDPR EU Regulation](https://gdpr.eu/)
 - Web Content Accessibility Guidelines (WCAG) 2.1: [W3C WCAG 2.1](https://www.w3.org/TR/WCAG21/)
 - Single Sign-On (SSO) Standards: [SSO Overview](https://www.techopedia.com/definition/4324/single-sign-on-sso)
-
----
